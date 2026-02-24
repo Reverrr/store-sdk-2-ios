@@ -7,4 +7,5 @@ const StoreKit2iOS = registerPlugin<StoreKit2iOSPlugin>('StoreKit2iOS', {
 });
 
 export * from './definitions';
-export { StoreKit2iOS };
+// Export as StoreKit2iOS (canonical) and IAP (short alias for app usage)
+export { StoreKit2iOS, StoreKit2iOS as IAP };
